@@ -43,6 +43,26 @@ namespace ProyectoSegudoParcial
 
                         gridInfo.Children.Add(new ParamentrosTes());
                         break;
+
+                    case 2:
+
+                        gridInfo.Children.Add(new ParametrosTonics());
+                        break;
+
+                    case 3:
+
+                        gridInfo.Children.Add(new ParametrosSundaes());
+                        break;
+
+                    case 4:
+
+                        gridInfo.Children.Add(new ParametrosReposteria());
+                        break;
+
+                    case 5:
+
+                        gridInfo.Children.Add(new ParametrosComida());
+                        break;
                 }
             
         }

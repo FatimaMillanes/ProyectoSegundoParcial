@@ -9,7 +9,11 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="29,42,0,0" TextWrapping="Wrap" Text="Codigo de producto" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="161,35,0,0" TextWrapping="Wrap" Text="Agregar" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="281,156,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="161,88,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>other</ComboBoxItem>
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" Margin="29,94,0,0" TextWrapping="Wrap" Text="Elegir producto" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>

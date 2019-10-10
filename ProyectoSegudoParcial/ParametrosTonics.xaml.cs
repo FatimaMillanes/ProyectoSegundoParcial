@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace ProyectoSegudoParcial
 {
     /// <summary>
-    /// Lógica de interacción para ParametrosCafes.xaml
+    /// Lógica de interacción para ParametrosTonics.xaml
     /// </summary>
-    public partial class ParametrosCafes : UserControl
+    public partial class ParametrosTonics : UserControl
     {
-        public ParametrosCafes()
+        public ParametrosTonics()
         {
             InitializeComponent();
         }
-
-      
     }
 }
