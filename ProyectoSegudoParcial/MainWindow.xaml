@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoSegudoParcial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="602.354" Width="780.83">
+        Title="MainWindow" Height="559.154" Width="505.63">
     <Grid>
-        <TextBlock x:Name="txtProducto" HorizontalAlignment="Left" Margin="76,57,0,0" TextWrapping="Wrap" Text="Tipo de Producto" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbItems" HorizontalAlignment="Left" Margin="200,57,0,0" VerticalAlignment="Top" Width="418">
+        <TextBlock x:Name="txtProducto" HorizontalAlignment="Left" Margin="28,72,0,0" TextWrapping="Wrap" Text="Tipo de Producto" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbItems" HorizontalAlignment="Left" Margin="147,66,0,0" VerticalAlignment="Top" Width="216">
             <ComboBoxItem>Cafe</ComboBoxItem>
             <ComboBoxItem>Te</ComboBoxItem>
             <ComboBoxItem>Tonic</ComboBoxItem>
@@ -16,11 +16,13 @@
             <ComboBoxItem>Reposteria</ComboBoxItem>
             <ComboBoxItem>Comida</ComboBoxItem>
         </ComboBox>
-        
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="665,55,0,0" VerticalAlignment="Top" Width="75" Click="BtnAgregar_Click"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="563,518,0,0" VerticalAlignment="Top" Width="75" Click="BtnCancelar_Click"/>
-        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="665,518,0,0" VerticalAlignment="Top" Width="75" Click="BtnGuardar_Click"/>
-        <Grid x:Name="gridInfo" HorizontalAlignment="Left" Height="398" Margin="28,99,0,0" VerticalAlignment="Top" Width="712"/>
+
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="407,66,0,0" VerticalAlignment="Top" Width="75" Click="BtnAgregar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="305,497,0,0" VerticalAlignment="Top" Width="75" Click="BtnCancelar_Click"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="407,497,0,0" VerticalAlignment="Top" Width="75" Click="BtnGuardar_Click"/>
+        <Grid x:Name="gridInfo" HorizontalAlignment="Left" Height="398" Margin="28,99,0,0" VerticalAlignment="Top" Width="454"/>
+        <TextBlock x:Name="txtProducto_Copy" HorizontalAlignment="Left" Margin="201,20,0,0" TextWrapping="Wrap" Text="Cafetería Fátima" VerticalAlignment="Top" FontSize="24" FontFamily="Script MT Bold"/>
+        <Grid x:Name="gridValidacion" HorizontalAlignment="Left" Height="30" Margin="28,467,0,0" VerticalAlignment="Top" Width="454"/>
 
     </Grid>
 </Window>

@@ -20,6 +20,9 @@ namespace ProyectoSegudoParcial
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        bool validacion = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -76,9 +79,17 @@ namespace ProyectoSegudoParcial
 
         private void BtnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            gridInfo.Children.Clear();
-            btnGuardar.Visibility = Visibility.Hidden;
-            btnCancelar.Visibility = Visibility.Hidden;
+            if(validacion)
+            {
+                gridValidacion.Children.Clear();
+                btnGuardar.Visibility = Visibility.Hidden;
+                btnCancelar.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                gridValidacion.Children.Add(new Validacion());
+            }
+
         }
     }
 }
