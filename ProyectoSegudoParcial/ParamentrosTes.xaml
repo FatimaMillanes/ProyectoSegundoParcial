@@ -7,7 +7,64 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbElegir" SelectedIndex = "0" HorizontalAlignment="Left" Margin="138,32,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Elegir</ComboBoxItem>
+            <ComboBoxItem>Regular</ComboBoxItem>
+            <ComboBoxItem>Manzanilla</ComboBoxItem>
+            <ComboBoxItem>Verde</ComboBoxItem>
+            <ComboBoxItem>Menta</ComboBoxItem>
+            <ComboBoxItem>Hibisco</ComboBoxItem>
+            <ComboBoxItem>Negro</ComboBoxItem>
+            <ComboBoxItem>Chai</ComboBoxItem>
 
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" Margin="0,38,0,0" TextWrapping="Wrap" Text="Elegir producto" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,71,0,0" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top"/>
+
+        <StackPanel x:Name="spTipo" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="137,71,2,-0.4">
+            <RadioButton x:Name="rbHelado">Helado</RadioButton>
+            <RadioButton x:Name="rbCaliente">Caliente</RadioButton>
+        </StackPanel>
+
+        <TextBlock HorizontalAlignment="Left" Margin="0,105,0,0" TextWrapping="Wrap" Text="Leche" VerticalAlignment="Top"/>
+
+        <StackPanel x:Name="spLeche"  Orientation="Horizontal" Margin="138,105,0,-0.4" Grid.ColumnSpan="2">
+            <CheckBox x:Name="chbSin">Sin Leche</CheckBox>
+            <CheckBox x:Name="chbDes">Deslactosada</CheckBox>
+            <CheckBox x:Name="chbEnt">Entera</CheckBox>
+            <CheckBox x:Name="chbSoya">Soya</CheckBox>
+            <CheckBox x:Name="chbCoc">Cocoa</CheckBox>
+            <CheckBox x:Name="chbAv">Avellana</CheckBox>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="0,147,0,0" TextWrapping="Wrap" Text="Té" VerticalAlignment="Top"/>
+        <StackPanel x:Name="spReg" Orientation="Horizontal" Margin="139,147,0.2,-0.4">
+            <RadioButton x:Name="rbRegular">Regular</RadioButton>
+            <RadioButton x:Name="rbDescafeinado">Descafeinado</RadioButton>
+        </StackPanel>
+
+        <TextBlock HorizontalAlignment="Left" Margin="0,184,0,0" TextWrapping="Wrap" Text="Tamaño" VerticalAlignment="Top"/>
+        <StackPanel x:Name="spTamaño" Orientation="Horizontal" Margin="139,184,0,-0.4">
+            <RadioButton x:Name="rbChico">Chico</RadioButton>
+            <RadioButton x:Name="rbMediano">Mediano</RadioButton>
+            <RadioButton x:Name="rbGrande">Grande</RadioButton>
+            <RadioButton x:Name="rbRefil">Refil</RadioButton>
+        </StackPanel>
+
+        <TextBlock HorizontalAlignment="Left" Margin="1,220,0,0" TextWrapping="Wrap" Text="Endulzante" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbEndulzante" SelectedIndex = "0" HorizontalAlignment="Left" Margin="138,220,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Elegir</ComboBoxItem>
+            <ComboBoxItem>Nada</ComboBoxItem>
+            <ComboBoxItem>Azúcar</ComboBoxItem>
+            <ComboBoxItem>Mascabado</ComboBoxItem>
+            <ComboBoxItem>Miel</ComboBoxItem>
+            <ComboBoxItem>Splenda</ComboBoxItem>
+            <ComboBoxItem>Stevia</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="1,261,0,0" TextWrapping="Wrap" Text="Código de descuento" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="138,257,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1,299,0,0" TextWrapping="Wrap" Text="Precio" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="138,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
+   
 </UserControl>

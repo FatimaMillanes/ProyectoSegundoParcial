@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <TextBlock HorizontalAlignment="Left" Margin="23,10,0,0" TextWrapping="Wrap" Text="*Es necesario llenar todos los datos" VerticalAlignment="Top" Height="28" Width="290" FontSize="16" Foreground="#FFA00000" FontWeight="Bold"/>
+
     </Grid>
 </UserControl>
